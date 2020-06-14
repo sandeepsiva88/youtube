@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var fetchVideoInfo = require('youtube-info');
 var monk = require('monk');
-var db = monk('localhost:27017/youtube');
+var db = monk('mongodb://siva:Jyothsna8@ds127297.mlab.com:27297/youtube');
 var col = db.get('video');
 /* GET home page. */
 router.get('/', function(req, res) {
