@@ -7,12 +7,13 @@ var col = db.get('video');
 /* GET home page. */
 router.get('/', function(req, res) {
 	var videos = 
-	['w0-E-a89LSQ',
+	[
+	'w0-E-a89LSQ',
+	'wuJKi1YSgS0',
 	'LkkkL7CSISQ',
 	'WUT7_jkiUoM',
 	'z90T03YQa7k',
 	'PelFrTNvEcQ',
-	'wuJKi1YSgS0',
 	'6nBXwJSKmbc',
 	'faI9gfRL2VQ',
 	'pXLU5tXFH84',
@@ -65,7 +66,8 @@ router.get('/', function(req, res) {
 	'07IhAi1DbdE',
 	'kK3iAATFM1I',
 	'2gxD8HcAvbQ',
-	'RgCNndESsD4']
+	'RgCNndESsD4'
+	]
 	for (var i = 0; i < videos.length; i++) {
 	fetchVideoInfo(videos[i], function (err,videoInfo) {
        if (err) return console.log('error');
