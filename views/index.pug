@@ -29,7 +29,7 @@ html
                 td #{member.likes}  
         b(style='color:red')
           | Note : 
-        span Page will be refreshed for every minute    
+        span Page will be refreshed for every 1 minute    
   script(src='https://code.jquery.com/jquery-3.5.1.js')
   script(src='https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js')
   script(src='https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js')
@@ -43,6 +43,7 @@ html
     $(document).ready(function() {
       $('#example').DataTable( {
         dom: 'Bfrtip',
+        order: [[ 2, "desc" ]],
         buttons: [
             'copy', 'csv', 'excel', 'pdf', 'print'
         ]
